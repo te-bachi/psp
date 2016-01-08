@@ -1,0 +1,38 @@
+DEFINITION MODULE StrIO ;
+
+(*
+   Description: Provides simple string input output routines.
+*)
+
+EXPORT QUALIFIED ReadString, WriteString,
+                 WriteLn ;
+
+
+(*
+   WriteLn - writes a carriage return and a newline
+             character.
+*)
+
+
+PROCEDURE WriteLn ;
+
+
+(*
+   ReadString - reads a sequence of characters into a string.
+                Line editing accepts Del, Ctrl H, Ctrl W and
+                Ctrl U.
+*)
+
+
+PROCEDURE ReadString (VAR a: ARRAY OF CHAR) ;
+
+
+(*
+   WriteString - writes a string to the default output.
+*)
+
+
+PROCEDURE WriteString (a: ARRAY OF CHAR) ;
+
+
+END StrIO.
