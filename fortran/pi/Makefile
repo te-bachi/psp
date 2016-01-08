@@ -1,5 +1,6 @@
 
-FORTRAN       = gfortran-4.7
+SRC_FORMAT    = f
+FORTRAN       = gfortran
 
 PROGRAMS      = pi
 
