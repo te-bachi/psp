@@ -65,7 +65,7 @@ DIRECTORIES =
 all: mkdirs $(PROGRAMS)
 clean: $(addsuffix _clean,$(PROGRAMS))
 	@rm -rf obj
-	@rm *.o *.s *.cpp
+	@rm -f *.o *.s *.cpp
 	
 endef
 
