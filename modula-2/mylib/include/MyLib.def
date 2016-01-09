@@ -1,0 +1,9 @@
+
+DEFINITION MODULE MyLib;
+
+    EXPORT QUALIFIED MyFunc;
+    
+    PROCEDURE MyFunc(str: ARRAY OF CHAR; VAR b: CARDINAL) : INTEGER;
+
+END MyLib.
+
