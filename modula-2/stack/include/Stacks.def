@@ -1,0 +1,48 @@
+(*
+    FILE:
+        Stacks.def
+    PROJECT:
+        Examples
+    CREATED:
+        09.01.2016
+    VERSION:
+        1.0
+    AUTHOR:
+        Andreas Bachmann
+    IMPLEMENTATION:
+        stack is implemented using a simple linked list
+        top item is front element of the list
+        empty stack is represented by a NIL value
+    MODIFICATIONS:
+        -
+*)
+
+DEFINITION MODULE Stacks;
+    
+    TYPE
+        Item        =   CHAR;
+        Stack;
+    
+    (* DESCRIPTION: Create a new empty stack *)
+    PROCEDURE Create() : Stack;
+    
+    (* DESCRIPTION: Destroy a stack and release associated memory *)
+    PROCEDURE Destroy(VAR stack: Stack);
+    
+    (* DESCRIPTION: Pushes an item on top of the stack *)
+    PROCEDURE Push(VAR stack: Stack; item: Item);
+    
+    (* DESCRIPTION: Pops top item from the stack *)
+    PROCEDURE Pop(VAR stack: Stack) : Item;
+    
+    (* DESCRIPTION: Returns top item of the stack *)
+    PROCEDURE Top(stack: Stack) : Item;
+    
+    (* DESCRIPTION: Returns the number of items in the stack *)
+    PROCEDURE Size(stack: Stack) : CARDINAL;
+    
+    (* DESCRIPTION: tells whether the stack is empty *)
+    PROCEDURE IsEmpty(stack: Stack) : BOOLEAN;
+
+END Stacks.
+
