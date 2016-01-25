@@ -1,0 +1,105 @@
+GNU Make 4.0
+Built for x86_64-pc-linux-gnu
+Copyright (C) 1988-2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Reading makefiles...
+Reading makefile 'Makefile'...
+Reading makefile 'Makefile.inc' (search path) (no ~ expansion)...
+Updating makefiles....
+ Considering target file 'Makefile.inc'.
+  File 'Makefile.inc' does not exist.
+  Finished prerequisites of target file 'Makefile.inc'.
+ Must remake target 'Makefile.inc'.
+ Successfully remade target file 'Makefile.inc'.
+ Considering target file 'Makefile'.
+  File 'Makefile' does not exist.
+  Finished prerequisites of target file 'Makefile'.
+ Must remake target 'Makefile'.
+ Successfully remade target file 'Makefile'.
+Updating goal targets....
+Considering target file 'all'.
+ File 'all' does not exist.
+  Considering target file 'pi'.
+   File 'pi' does not exist.
+    Considering target file 'obj/pi/main.o'.
+     File 'obj/pi/main.o' does not exist.
+      Considering target file 'obj/pi/./'.
+       File 'obj/pi/./' does not exist.
+       Finished prerequisites of target file 'obj/pi/./'.
+      Must remake target 'obj/pi/./'.
+Putting child 0xf81640 (obj/pi/./) PID 5488 on the chain.
+Live child 0xf81640 (obj/pi/./) PID 5488 
+[MKDIR] obj/pi/./
+Reaping winning child 0xf81640 PID 5488 
+Live child 0xf81640 (obj/pi/./) PID 5489 
+Reaping winning child 0xf81640 PID 5489 
+Removing child 0xf81640 PID 5489 from chain.
+      Successfully remade target file 'obj/pi/./'.
+      Considering target file 'src/main.f90'.
+       Looking for an implicit rule for 'src/main.f90'.
+       Trying pattern rule with stem 'main.f90'.
+       Trying implicit prerequisite 'src/main.f90,v'.
+       Trying pattern rule with stem 'main.f90'.
+       Trying implicit prerequisite 'src/RCS/main.f90,v'.
+       Trying pattern rule with stem 'main.f90'.
+       Trying implicit prerequisite 'src/RCS/main.f90'.
+       Trying pattern rule with stem 'main.f90'.
+       Trying implicit prerequisite 'src/s.main.f90'.
+       Trying pattern rule with stem 'main.f90'.
+       Trying implicit prerequisite 'src/SCCS/s.main.f90'.
+       No implicit rule found for 'src/main.f90'.
+       Finished prerequisites of target file 'src/main.f90'.
+      No need to remake target 'src/main.f90'.
+     Finished prerequisites of target file 'obj/pi/main.o'.
+    Must remake target 'obj/pi/main.o'.
+Putting child 0xf857f0 (obj/pi/main.o) PID 5490 on the chain.
+Live child 0xf857f0 (obj/pi/main.o) PID 5490 
+[FC] src/main.f90
+Reaping winning child 0xf857f0 PID 5490 
+Live child 0xf857f0 (obj/pi/main.o) PID 5491 
+Reaping winning child 0xf857f0 PID 5491 
+Removing child 0xf857f0 PID 5491 from chain.
+    Successfully remade target file 'obj/pi/main.o'.
+    Considering target file 'obj/pi/pi.o'.
+     File 'obj/pi/pi.o' does not exist.
+      Pruning file 'obj/pi/./'.
+      Considering target file 'src/pi.f90'.
+       Looking for an implicit rule for 'src/pi.f90'.
+       Trying pattern rule with stem 'pi.f90'.
+       Trying implicit prerequisite 'src/pi.f90,v'.
+       Trying pattern rule with stem 'pi.f90'.
+       Trying implicit prerequisite 'src/RCS/pi.f90,v'.
+       Trying pattern rule with stem 'pi.f90'.
+       Trying implicit prerequisite 'src/RCS/pi.f90'.
+       Trying pattern rule with stem 'pi.f90'.
+       Trying implicit prerequisite 'src/s.pi.f90'.
+       Trying pattern rule with stem 'pi.f90'.
+       Trying implicit prerequisite 'src/SCCS/s.pi.f90'.
+       No implicit rule found for 'src/pi.f90'.
+       Finished prerequisites of target file 'src/pi.f90'.
+      No need to remake target 'src/pi.f90'.
+     Finished prerequisites of target file 'obj/pi/pi.o'.
+    Must remake target 'obj/pi/pi.o'.
+Putting child 0xf82100 (obj/pi/pi.o) PID 5494 on the chain.
+Live child 0xf82100 (obj/pi/pi.o) PID 5494 
+[FC] src/pi.f90
+Reaping winning child 0xf82100 PID 5494 
+Live child 0xf82100 (obj/pi/pi.o) PID 5495 
+Reaping winning child 0xf82100 PID 5495 
+Removing child 0xf82100 PID 5495 from chain.
+    Successfully remade target file 'obj/pi/pi.o'.
+   Finished prerequisites of target file 'pi'.
+  Must remake target 'pi'.
+Putting child 0xf857f0 (pi) PID 5498 on the chain.
+Live child 0xf857f0 (pi) PID 5498 
+[LD] pi
+Reaping winning child 0xf857f0 PID 5498 
+Live child 0xf857f0 (pi) PID 5499 
+Reaping winning child 0xf857f0 PID 5499 
+Removing child 0xf857f0 PID 5499 from chain.
+  Successfully remade target file 'pi'.
+ Finished prerequisites of target file 'all'.
+Must remake target 'all'.
+Successfully remade target file 'all'.

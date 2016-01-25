@@ -1,0 +1,73 @@
+GNU Make 4.0
+Built for x86_64-pc-linux-gnu
+Copyright (C) 1988-2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Reading makefiles...
+Reading makefile 'Makefile'...
+Reading makefile 'Makefile.inc' (search path) (no ~ expansion)...
+Updating makefiles....
+ Considering target file 'Makefile.inc'.
+  File 'Makefile.inc' does not exist.
+  Finished prerequisites of target file 'Makefile.inc'.
+ Must remake target 'Makefile.inc'.
+ Successfully remade target file 'Makefile.inc'.
+ Considering target file 'Makefile'.
+  File 'Makefile' does not exist.
+  Finished prerequisites of target file 'Makefile'.
+ Must remake target 'Makefile'.
+ Successfully remade target file 'Makefile'.
+Updating goal targets....
+Considering target file 'all'.
+ File 'all' does not exist.
+  Considering target file 'pi'.
+    Considering target file 'obj/pi/main.o'.
+      Considering target file 'obj/pi/./'.
+       Finished prerequisites of target file 'obj/pi/./'.
+      No need to remake target 'obj/pi/./'.
+      Considering target file 'src/main.f90'.
+       Looking for an implicit rule for 'src/main.f90'.
+       Trying pattern rule with stem 'main.f90'.
+       Found an implicit rule for 'src/main.f90'.
+       Finished prerequisites of target file 'src/main.f90'.
+      No need to remake target 'src/main.f90'.
+     Finished prerequisites of target file 'obj/pi/main.o'.
+     Prerequisite 'obj/pi/./' is newer than target 'obj/pi/main.o'.
+     Prerequisite 'src/main.f90' is older than target 'obj/pi/main.o'.
+    Must remake target 'obj/pi/main.o'.
+Putting child 0x21383c0 (obj/pi/main.o) PID 5517 on the chain.
+Live child 0x21383c0 (obj/pi/main.o) PID 5517 
+[FC] src/main.f90
+Reaping winning child 0x21383c0 PID 5517 
+Live child 0x21383c0 (obj/pi/main.o) PID 5518 
+Reaping winning child 0x21383c0 PID 5518 
+Removing child 0x21383c0 PID 5518 from chain.
+    Successfully remade target file 'obj/pi/main.o'.
+    Considering target file 'obj/pi/pi.o'.
+      Pruning file 'obj/pi/./'.
+      Considering target file 'src/pi.f90'.
+       Looking for an implicit rule for 'src/pi.f90'.
+       Trying pattern rule with stem 'pi.f90'.
+       Found an implicit rule for 'src/pi.f90'.
+       Finished prerequisites of target file 'src/pi.f90'.
+      No need to remake target 'src/pi.f90'.
+     Finished prerequisites of target file 'obj/pi/pi.o'.
+     Prerequisite 'obj/pi/./' is older than target 'obj/pi/pi.o'.
+     Prerequisite 'src/pi.f90' is older than target 'obj/pi/pi.o'.
+    No need to remake target 'obj/pi/pi.o'.
+   Finished prerequisites of target file 'pi'.
+   Prerequisite 'obj/pi/main.o' is newer than target 'pi'.
+   Prerequisite 'obj/pi/pi.o' is older than target 'pi'.
+  Must remake target 'pi'.
+Putting child 0x2130230 (pi) PID 5521 on the chain.
+Live child 0x2130230 (pi) PID 5521 
+[LD] pi
+Reaping winning child 0x2130230 PID 5521 
+Live child 0x2130230 (pi) PID 5522 
+Reaping winning child 0x2130230 PID 5522 
+Removing child 0x2130230 PID 5522 from chain.
+  Successfully remade target file 'pi'.
+ Finished prerequisites of target file 'all'.
+Must remake target 'all'.
+Successfully remade target file 'all'.

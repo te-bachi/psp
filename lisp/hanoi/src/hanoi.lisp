@@ -1,0 +1,12 @@
+
+(defun dohanoi (n from temp to)
+  (cond ((> n 0)
+          (dohanoi (- n 1) from to temp)
+          (format t "move ~D --> ~D~&" from to)
+          (dohanoi (- n 1) temp from to)
+        )
+  )
+)
+(defun hanoi (n)
+  (dohanoi n 1 2 3)
+)
